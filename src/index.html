@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" href="/src/pictures/logo.jpeg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Eway</title>
+    <style>
+        /* Style spécifique pour le bouton de retour en haut de la page */
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 4%;
+            right: 4%;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="bg-transparent">
+            <div class="container mx-auto flex flex-col justify-between items-center lg:flex-row">
+                <div class="container mx-auto flex justify-between items-center p-5">
+                    <button id="menu-toggle" class="block lg:hidden focus:outline-none">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                            </path>
+                        </svg>
+                    </button>
+                    <img src="/src/pictures/logo.jpeg" alt="" class="w-24 h-24 mylogo">
+                </div>
+                <ul id="menu" class="hidden lg:flex gap-10 text-center pb-2 text-xl px-5">
+                    <li><a href="#home" class="text-white hover:text-gray-300 ">Home</a></li>
+                    <li><a href="#about" class="text-white hover:text-gray-300">About</a></li>
+                    <li><a href="#departements" class="text-white hover:text-gray-300">Departments</a></li>
+                    <li><a href="#program" class="text-white hover:text-gray-300">Program</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="pb-10 flex flex-col justify-center items-center h-2/3">
+            <h1 class="text-white text-7xl font-extralight">Eway</h1>
+            <p class="text-white text-2xl max-w-xl text-center py-4 px-8 font-bold">Education et Entrepreunariat</p>
+        </div>
+    </header>
+    <div id="home" data-aos="fade-up" data-aos-duration="3000">
+       
+    </div>
+
+    <div id="about" class=" mx-8" data-aos="fade-down" data-aos-duration="3000">
+        <div class="mesImgMobile flex justify-center gap-4 pt-4">
+            <div class="space-y-3 flex flex-col">
+                <img src="/src/pictures/robot.jpg" alt="" class="w-screen">
+                <img src="/src/pictures/drone.jpg" alt="" class="w-screen">
+        
+            </div>
+            <div class=" mt-8 space-y-3">
+                <img src="/src/pictures/about (3).jpg" alt="" class="w-screen">
+                <img src="/src/pictures/news (5).jpg" alt="" class="w-screen">
+        
+        
+            </div>
+        </div>
+        <h1 class="text-center font-bold py-2 text-2xl">Qui sommes-nous?</h1>
+        <div class="flex flex-col justify-center items-center gap-4 md:flex-col lg:flex-row">
+           
+            
+            <div class="text pt-8 mesImgMobile " data-aos="fade-right" data-aos-duration="3000">
+                <p>Notre organisation est convaincue que nous sommes
+                responsables de tenir entre nos mains les rêves des autres. Cela
+                nous donne un but, c'est la raison pour laquelle notre équipe
+                dynamique se réveille chaque matin. Le résultat de nos efforts
+                est fantastique, nous concevons des programmes éducatifs
+                spéciaux pour renforcer notre communauté ainsi nous croyons
+                au pouvoir de la collaboration pour y parvenir.
+                Sachant que nous avons la responsabilité de porter les rêves des
+                autres, notre équipe cherche continuellement à soutenir les
+                écoles, les universités et tout autre organisation dans le cadre
+                d'un partenariat efficace avec l'objectif d'avoir un impact
+                considérable sur la vie de nos communautés à long terme.
+                Le nouveau millénaire se caractérise par la présence de défis
+                sans précédent. Et aucun de ces problèmes ne pourra être résolu
+                de manière isolée.
+                Nous sommes déterminés a utiliser l'éducation et
+                l'entrepreneuriat ainsi que la collaboration intersectorielle pour
+                relever les défis que notre pays fait face pour contribuer
+                efficacement a son développement.</p>
+            </div>
+        </div>
+    </div>
+    <button onclick="scrollToTop()"
+        class="back-to-top bg-black text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out">
+        <img src="/src/pictures/arrow.png" class="w-10 h-10 object-cover" alt="">
+    </button>
+<div id="departements" data-aos="fade-right" data-aos-duration="3000">
+    <div>
+        <h1 class="text-center py-4 font-bold pb-8 text-2xl">Nos départements</h1>
+    </div>
+    <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-5 mx-8">
+        <div class="shadow-lg rounded-b-lg" data-aos="fade-right" data-aos-duration="3000">
+            <div class="image-container">
+                <img src="/src/pictures/programs (1).jpeg" alt="" class="rounded-t-lg ">
+            </div>
+            <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">Agriculture</h1>
+            <p class="px-2 py-2">Il contribue à la promotion et à la sécurisation des investissements agricoles, à travers le suivi et l'assurance
+            agricole. Ce département au sein de Eway a une synergie des agriculteurs locaux et assure leur développement avec une
+            formation continue. Travaille également avec de nombreux individus et organisations dans le domaine de l'agriculture.</p>
+        </div>
+        <div class="shadow-lg rounded-b-lg" data-aos="fade-left" data-aos-duration="3000">
+            <div class="image-container">
+                <img src="/src/pictures/programs (2).jpeg" alt="" class="rounded-t-lg">
+            </div>
+            <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">Technologies</h1>
+            <p class="px-2 py-2">Le département Sciences et Technologies de Eway compte plusieurs innovations passionnantes sur les sciences de
+            l'environnement et l'informatique. Ce département a pour ambition d'accompagner les changements via les technologies et
+            l'innovation dans différents domaines.
+</p>
+        </div>
+        <div class="shadow-lg rounded-b-lg" data-aos="fade-right" data-aos-duration="3000">
+            <div class="image-container">
+                <img src="/src/pictures/programs (3).jpeg" alt="" class="rounded-t-lg">
+            </div>
+            <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">Education</h1>
+            <p class="px-2 py-2">Il gère les programmes éducatifs spéciaux, la gestion et l'amélioration continues du système éducatif Eway pour répondre
+            aux besoins de la société et préparer les jeunes à l'avenir.</p>
+        </div>
+        <div class="shadow-lg rounded-b-lg" data-aos="fade-left" data-aos-duration="3000">
+            <div class="image-container">
+                <img src="/src/pictures/programs (4).jpeg" alt="" class="rounded-t-lg">
+            </div>
+            <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">Finances</h1>
+            <p class="px-2 py-2">Le département des finances est chargé de la mobilisation et de l'administration des ressources financières de
+            l'organisation. L'objectif de ce département est d'aider la communauté locale à se développer financièrement et de créer
+            un fonds de capital pour le développement rural.</p>
+        </div>
+    </div>
+</div>
+
+<div class="mx-8 my-8">
+    <div class="h-[100px] lg:h-[200px]">
+        <div class=" absolute mx-8 ">
+        <h1 class="text-white py-4 font-bold pb-8 text-3xl lg:text-6xl ">Eway</h1>
+        </div>
+        <img src="/src/pictures/home (4).jpg" alt="" class="h-full object-cover object-center w-screen">
+    </div>
+</div>
+
+<div id="program">
+    <div>
+        <h1 class="text-center py-4 font-bold pb-8 text-2xl">Nos programmes</h1>
+    </div>
+    <div>
+        <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-5 mx-8">
+            <div class="shadow-lg rounded-b-lg" data-aos="fade-right" data-aos-duration="3000">
+                <div class="image-container">
+                    <img src="/src/pictures/news (3).jpg" alt="" class="rounded-t-lg">
+                </div>
+                <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">Orpheway</h1>
+                <p class="px-2 py-2">ORPH'EWAY est un projet de recensement, de formation, d'insertion, réinsertion et de l’accompagnement professionnel des
+                orphelins. Il est joint à ce programme de cours qui permet l'autonomisation, la maîtrise de soi ainsi que l'éveil des
+                enfants, Considérant que chaque vie humaine est égale et importante, Orph'Eway se veut être le canal par lequel les
+                orphelins pourront trouver la voie.</p>
+            </div>
+            <div class="shadow-lg rounded-b-lg" data-aos="fade-left" data-aos-duration="3000">
+                <div class="image-container">
+                    <img src="/src/pictures/agri.jpeg" alt="" class="rounded-t-lg">
+                </div>
+                <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">ERISE Agriculture</h1>
+                <p class="px-2 py-2">Le programme E-RISE veut résoudre le décalage entre notre communauté et l’industrie même qui nous nourrit et soutient.
+                Connecter notre communauté pour savoir d'où vient sa nourriture, comment elle est cultivée et comment la vendre avec
+                profit. L'objectif est de développer l'empreinte agricole de la jeunesse congolaise.
+                </p>
+            </div>
+            <div class="shadow-lg rounded-b-lg" data-aos="fade-right" data-aos-duration="3000">
+                <div class="image-container">
+                    <img src="/src/pictures/conf.jpg" alt="" class="rounded-t-lg">
+                </div>
+                <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">VOICE’EWAY</h1>
+                <p class="px-2 py-2">Un programme de conférences en série organisées au niveau national par Eway. Elle a pour but de contribuer au partage
+                d'idées et d'expériences de nombreuses personnes.</p>
+            </div>
+            <div class="shadow-lg rounded-b-lg" data-aos="fade-left" data-aos-duration="3000">
+                <div class="image-container">
+                    <img src="/src/pictures/club.jpg" alt="" class="rounded-t-lg">
+                </div>
+                <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">EE-CLUB</h1>
+                <p class="px-2 py-2">Club des Entrepreneurs - by Eway c’est une communauté dynamique dédiée à l'inspiration et à l'épanouissement des
+                entrepreneurs de tout horizons. un réseau de créateurs et dirigeants d'entreprises qui ont tous, dans des secteurs
+                d'activité différents, leur propre expertise, mais qui partagent une ambition commune : promouvoir l'esprit
+                d'entreprendre et faire grandir leur entreprise.</p>
+            </div>
+            <div class="shadow-lg rounded-b-lg" data-aos="fade-left" data-aos-duration="3000">
+                <div class="image-container">
+                    <img src="/src/pictures/sport.jpg" alt="" class="rounded-t-lg">
+                </div>
+                <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">S-PSY</h1>
+                <p class="px-2 py-2">S-PSY est un programme de renforcement de formation et d'entraînement basé sur les pratiques de la neuroscience. Le
+                programme a un large champ d'application dans différents sports. L'objectif est d'améliorer les résultats des athlètes
+                de tous sports confondus.</p>
+            </div>
+            <div class="shadow-lg rounded-b-lg" data-aos="fade-left" data-aos-duration="3000">
+                <div class="image-container">
+                    <img src="/src/pictures/top (2).jpg" alt="" class="rounded-t-lg">
+                </div>
+                <h1 class="text-2xl font-bold pt-2 text-orange-600 px-2">EFL</h1>
+                <p class="px-2 py-2">Le programme EFL est un programme d'initiation à l'entrepreneuriat, l'éducation et le leadership pour permettre les
+                écoles à répondre aux besoins sociaux économiques actuels.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="bg-orange-600 my-5 text-white">
+        <div class="max-w-7xl mx-auto px-4 pt-8" >
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
+                    <p>&copy; 2024 Eway. Tous droits réservés.</p>
+                </div>
+                <div class="w-full md:w-1/2 text-center md:text-right">
+                    <ul class="flex justify-center md:justify-end space-x-4">
+                        <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                        <li><a href="#" class="hover:text-gray-400">About</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+                    </ul>
+                    <div class=" pb-3">
+                        <p>Brazzaville, République du Congo</p>
+                        <p>107, Rue Sibiti Moungali</p>
+                        <p>ewaynpo@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="/src/script.js"></script>
+
+</body>
+</html>
